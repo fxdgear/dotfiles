@@ -1,0 +1,3 @@
+alias la="exa -abghl --git --color=automatic"
+alias c="pygmentize -O style=monokai -f console256 -g"
+alias gh="docker run --rm -it -v `pwd`:/code gh"

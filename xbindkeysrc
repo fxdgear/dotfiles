@@ -1,0 +1,26 @@
+"pamixer --unmute && pamixer --increase 5"
+   XF86AudioRaiseVolume
+
+"pamixer --unmute && pamixer --decrease 5"
+   XF86AudioLowerVolume
+
+"pamixer --mute"
+   XF86AudioMute
+
+"amixer set Capture toggle"
+   XF86AudioMicMute
+
+"xbacklight -inc 5"
+   XF86MonBrightnessUp
+
+"xbacklight -dec 5"
+   XF86MonBrightnessDown
+
+"gnome-screenshot -a"
+   Print
+
+"i3lock -c 000000 && systemctl suspend"
+   XF86Display
+
+"lock-screen"
+   XF86Tools

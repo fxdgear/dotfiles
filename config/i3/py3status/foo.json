@@ -1,0 +1,12 @@
+{
+    "customers": [
+        "customer": {
+            "first_name": "Nick",
+            "last_name": "Lang"
+        }
+        "customer": {
+            "first_name": "Shri",
+            "last_name": "Bodas"
+        }
+    ]
+}
