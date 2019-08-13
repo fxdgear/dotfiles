@@ -1,5 +1,5 @@
 [options]
-font = Ubuntu Mono 15
+font = Ubuntu Mono 10
 scrollback_lines = -1
 [colors]
 # Base16 Material Darker

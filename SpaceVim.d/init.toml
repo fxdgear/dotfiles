@@ -51,4 +51,5 @@ default_position = 'top'
 default_height = 30
 
 [[custom_plugins]]
+    name = "towolf/vim-helm"
     name = "ambv/black"

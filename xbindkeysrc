@@ -19,7 +19,7 @@
 "gnome-screenshot -a"
    Print
 
-"i3lock -c 000000 && systemctl suspend"
+"/home/nick/bin/cycle-displays.sh"
    XF86Display
 
 "lock-screen"

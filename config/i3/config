@@ -15,8 +15,8 @@
 # #---Basic Definitions---# #
 # Needed for i3-gaps
 for_window [class="^.*"] border pixel 2
-gaps inner 7 
-gaps outer 7 
+gaps inner 7
+gaps outer 7
 set $term --no-startup-id $TERMINAL
 set $stoprec --no-startup-id dmenurecord kill
 set $shutdown sudo -A shutdown -h now
@@ -28,7 +28,7 @@ set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 # #---Dropdown Windows---# #
 
 # with prompt
-bindsym $mod+p exec $HOME/bin/i3-quickterm
+bindsym $mod+p exec $HOME/bin/i3-quickterm termite
 # always pop standard shell, without the menu
 bindsym $mod+b exec $HOME/bin/i3-quickterm shell
 
@@ -55,7 +55,7 @@ exec --no-startup-id xset s off -dpms
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:System San Francisco Display 9 
+font pango:System San Francisco Display 7
 
 
 # Before i3 v4.8, we used to recommend this one as the default:
@@ -69,7 +69,7 @@ font pango:System San Francisco Display 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec --no-startup-id ~/bin/samedir
 
 # bindsym $mod+BackSpace
@@ -219,7 +219,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-assign [class="^Chromium$"] → $workspace2
+assign [class="^(C|c)hromium$"] → $workspace2
+assign [class="^(F|f)irefox$"] → $workspace2
+assign [class="^(B|b)rave$"] → $workspace2
 assign [class="^chrome$"] → $workspace2
 assign [class="^TelegramDesktop$"] → $workspace3
 assign [class="^Slack$"] → $workspace3
